@@ -5,69 +5,116 @@
   <title>视频播放器</title>
   <style type="text/css">
     body{
-      background-color: rgba(250,250,0,0.1);
+      background-color: skyblue;
     }
-	 button,input{
+/* 	 button,input{
 	  font-size:2em;
-	  margin-right:1em;
-	  width:5em;
-	 }
+	  margin-right:3em;
+	  width:3em;
+	  	 } */
+	 #pause {
+	      background-color:beige;
+		  font-size:1.5vw;
+		  color:black;
+		  width:7vw;
+		  cursor:pointer;
+		  }
+     #play {
+	      background-color:beige;
+		  font-size:1.5vw;
+		  color:black;
+		  width:7vw;
+		  cursor:pointer;
+		  }
+     #next {
+	      background-color:beige;
+		  font-size:1.5vw;
+		  color:black;
+		  width:7vw;
+		  cursor:pointer;
+		  }
+      #previous {
+	      background-color:beige;
+		  font-size:1.5vw;
+		  color:black;
+		  width:7vw;
+		  cursor:pointer;
+		  }
+      #next {
+	      background-color:beige;
+		  font-size:1.5vw;
+		  color:black;
+		  width:7vw;
+		  cursor:pointer;
+		  }
 	 button#switch{
-	  border-radius: 20% ;
-	  background-color:green ;
-	  color : white;
+	  border-radius: 25% ;
+      font-size:1.5vw;
+	  background-color:yellow;
+	  color : black;
 	  cursor: pointer; 
 	 }
    div#logo{
-    background-color:greenyellow ;
+    background-color:green;
 	  color: white;
 	  font-size:2em;
-	  padding: 10px 30px;
-	  position: absolute ;
-	  right:0;
-	  top: 1em ; 
+	  padding: 10px 100px;
+	  position: relative;
+	  left:80%;
+          width:50px;
+          height:3vw;
+	  top:4.4em ; 
    }
-      div#time{
-    background-color:blue ;
-	  color: white;
-	  font-size:2em;
-	  padding: 10px 30px;
-	  position: absolute ;
-	  left:0;
-	  top: 1em ; 
-   }
-    div#UI{
-	 position:relative ;
-	 left: 0 ;
-	 top: 120px ;
-	 
-	}
-	div#stage p{
+
+div#stage p{
 	 text-align: center; 
 	 padding:5px 0px;
 	 background: black;
-	 color: lightgreen ;
-	 cursor: pointer ;
+	 color: lightgreen;
+	 cursor: pointer;
+}
+      div#time{
+          background-color:pink ;
+	  color: white;
+	  font-size:2em;
+	  padding: 10px 60px;
+	  position:relative;
+	  left:3vw;
+          width:12vw;
+          height:3vw;
+	  top: 2.2em ; 
+   }
+    div#UI{
+	 position:relative;
+	 left: 0 ;
+	 top: 120px ;
+	 text-align:center;
 	}
+
 	div#header{
-	width:1000px;
-	height:170px;
+	width:80vw;
+	height:20vw;
 	position:relative;
-	left:40%;
+	left:20%;
 	display:table-cell;
 	vertical-align:middle;
-	border:1px solid #000;
 
 	}
 	div#header p{
+        font-size:3vw;
 	text-align:center;
 	}
 	img{
-	 margin-left:50px;
+	 margin-left:60px;
 	 width:120px;
 	 height:160px;
 	 
-	 }
+	 } 
+
+div#UI p{
+text-align:center;
+font-size:2vw;
+}
   </style>
   <script src = "ks.js">
   <!--
@@ -79,32 +126,46 @@
  <body>
  <div id="header">
  <p>软件开发2班第一小组</p>
- <img src ="https://github.com/ldlee/ldjy/tree/main/ldjy/images/李登金扬.jpg">
- <img src ="https://github.com/ldlee/ldjy/tree/main/ldjy/images/程凯威.jpg">
- <img src ="https://github.com/ldlee/ldjy/tree/main/ldjy/images/韩诗雨.jpg">
- <img src ="https://github.com/ldlee/ldjy/tree/main/ldjy/images/尹乐欣.jpg">
- <img src ="https://github.com/ldlee/ldjy/tree/main/ldjy/images/蔡雨彤.jpg">
+ <img src ="https://yinlexin.github.io/face/myFace6.jpg">
+ <a href ="https://chengkaiwei.github.io">
+ <img src ="https://yinlexin.github.io/face/myFace1.jpg">
+ </a>
+ <a href ="https://yinlexin.github.io"><img src ="https://yinlexin.github.io/face/myFace2.jpg">
+ </a>
+ <a href ="https://swlqingfeng.github.io/"><img src ="https://yinlexin.github.io/face/myFace3.jpg">
+ </a>
+ <a href="https://ldlee.github.io/"><img src ="https://yinlexin.github.io/face/myFace4.jpg">
+ </a>
+ <a href="https://codercxt.github.io/"><img src ="https://yinlexin.github.io/face/myFace5.jpg">
+ </a>
+
  </div>
+ 
   <div id="logo">
-
   </div>
+
   <div id="time">
-
   </div>
+
   <div id="stage">
      <audio id = "myAudio"></audio>
 	 <video  id="myVideo"></video>
   </div>
+    
   
   
    <div id="UI" >
-	<button id="play">Play</button>
+    <button id="play">Play</button>
     <button id="previous">Previous</button>
     <button id="pause">Pause</button>
     <button id="next">Next</button>
     <button id="switch">视频</button>
+
+     <p>江西科技师范大学，元宇宙产业学院，Java软件制作二班</p>
+     <p>小组成员：程凯威、韩诗羽、李登金扬、尹乐欣、蔡欣彤</p>
    </div>
- 
+   
+   
 
 
   <script>
@@ -120,7 +181,7 @@
         timeDom : document.getElementById("time"), 
 		audioDom : document.getElementById("myAudio"),
 		logoDom : document.getElementById("logo") ,
-		 //下面是按牛
+		 //下面是按钮
         playDom : document.getElementById("play") ,
 		pauseDom : document.getElementById("pause") ,
         prevDom : document.getElementById("previous") ,
@@ -179,13 +240,12 @@
          let currentTime = Model.isVideo ? Model.UI.videoDom.currentTime  : Model.UI.audioDom.currentTime  ;
 
 		 currentTime = parseInt(currentTime) ;
-	     Model.UI.timeDom.textContent =  currentTime + ' s' + '/' + mediaTime	+ ' s'  ;
+	     Model.UI.timeDom.textContent =  currentTime + 's' + '/' + mediaTime	+ 's'  ;
 	  } , 
 	 createMenus : function(){
          let pDom = document.querySelector("div#stage p") ;
 		   if (pDom)  {
              for (let p of pDom ) {
-               Model.UI.stageDom.removeChild(p);
 		     }
 		   }
 		 
@@ -224,9 +284,9 @@
 	 loadMedia : function(){
 	   let i = Model.i ;
 	   if (Model.isVideo) {
-         Model.UI.videoDom.src = mediaData.videoPath +  mediaData. videoFileStruct[i] ;
+         Model.UI.videoDom.src = mediaData.videoPath + mediaData.videoFileStruct[Model.i];
 	   }else{
-	   Model.UI.audioDom.src =  mediaData.podPath +  mediaData.podFileStruct[i].fileName ;
+	   Model.UI.audioDom.src =  mediaData.podPath + mediaData.podFileStruct[Model.i].fileName;
 	   }
 
        Model.timeInfo() ;
