@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width , initial-scale=1">
+  <!-- 
+   增加这句后，可以看到浏览器的DevTools面板的模拟移动设备状态的变化
+  -->
+<style>
+    body{
+      font-size: 30px;
+	  height:px;
+	  width:540px;
+	  background-image:url("linuxCMD.jpg");
+	  background-size:auto;
+	  background-repeat:no-repeat;
+	  
+    }
+    header{
+      border: 2px solid blue;
+      height: 200px;
+    }
+
+    main{
+      border: 2px solid blue;
+      height: 400px;
+    }
+
+    footer{
+      border: 2px solid blue;
+      height: 100px;
+    }
+	p#book {
+        font-size: 1.8em;
+        letter-spacing: 0.2em;
+    }
+
+    button {
+        font-size: 1.2em;
+        margin-right: 1em;
+    }
+
+  </style>
+  
+  <title>Welcome to myCTApp</title>
+ </head> 
+ <body>
+  <header>
+	<p>
+     《计算思维和语言学习》
+	</p>
+ 
+  </header>
+  <nav>
+
+  <button>
+       导航1
+  </button>
+
+  <button>
+       导航2
+  </button>
+
+  <button>
+       导航3
+  </button>
+
+  </nav>
+   <main>
+   	   ‘读好书、练思维、勤编程’ @masterLijh 计算思维系列课程
+   </main> 
+
+  <footer> 
+	<p id="statusInfo">
+      CopyRight from 李登金扬  江西科技师范大学 2022--2025
+    </p>
+  </footer> 
+  <script>
+    var UI = {};
+      UI.deviceWidth = window.innerWidth;
+      UI.deviceHeight = window.innerHeight;
+      document.body.style.height = UI.deviceHeight + 200'px';
+      document.body.style.fontSize = UI.deviceWidth/25 + 'px';
+
+  </script>
+  
+ </body>
+</html>
