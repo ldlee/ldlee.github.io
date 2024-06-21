@@ -6,6 +6,9 @@ body{
 img#bookPage{
  max-width: 100%;
 }
+title{
+font-size:10px;
+}
 header{
  height: 15% ;
  background: rgb(250,100,0);
@@ -28,12 +31,12 @@ div#logoFace{
  right:10px;
 }
 img#teacherFace{
-  width:60%; 
+  width:50%; 
   border:1px solid red ;
  }
 
 p#lessonName{
-  font-size: 1.5em;
+  font-size: 0.5em;
   letter-spacing: 0.2em;
   text-align:center;
    
@@ -47,15 +50,10 @@ p#footerInfo{
   text-align:center;
   
 }
-/*
-@media screen and (min-width: 600px){
-  img#bookPage{
-   display:block;
-   margin:auto;
-   }
-  header{ height: 120px ;}
-  p#lessonName{line-height:120px;}
-  footer{ height: 60px ;  }
-  p#footerInfo{line-height:60px;}
-}
-*/
+div#bookface{
+    width: 80%;
+    height: 80%;
+    opacity: 0.5; 
+    left:7% ;
+    top: 7% ;
+	}
